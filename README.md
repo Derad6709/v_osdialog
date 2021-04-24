@@ -1,4 +1,14 @@
 # module v_osdialog
+A cross platform wrapper for OS dialogs like file save, open, message boxes, inputs, color picking, etc. for [V](https://vlang.io).
+
+Currently tested MacOS, Windows.
+
+# license
+
+Original С-osdialog is released into the public domain [(CC0)](https://github.com/AndrewBelt/osdialog/blob/master/LICENSE.txt). 
+
+[V](https://vlang.io)-wrapper is released under [Apache License 2.0](LICENSE).
+
 
 ## Contents
 - [file](#file)
@@ -12,7 +22,6 @@
 ```v
 fn file(action Actions, path string, filename string, filters string) string
 ```
-
 
 [[Return to contents]](#Contents)
 
