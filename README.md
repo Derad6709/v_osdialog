@@ -5,7 +5,7 @@ Currently tested MacOS, Windows.
 
 # license
 
-Original С-osdialog is released into the public domain [(CC0)](https://github.com/AndrewBelt/osdialog/blob/master/LICENSE.txt). 
+Original С-osdialog is released into the public domain [(CC0)](https://github.com/AndrewBelt/osdialog/blob/master/LICENSE.txt) by [AndrewBelt](https://github.com/AndrewBelt). 
 
 [V](https://vlang.io)-wrapper is released under [Apache License 2.0](LICENSE).
 
