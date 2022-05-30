@@ -1,9 +1,9 @@
-# module v_osdialog
+# Module v_osdialog
 A cross platform wrapper for OS dialogs like file save, open, message boxes, inputs, color picking, etc. for [V](https://vlang.io).
 
 Currently tested MacOS, Windows.
 
-# license
+# License
 
 Original С-osdialog is released into the public domain [(CC0)](https://github.com/AndrewBelt/osdialog/blob/master/LICENSE.txt) by [AndrewBelt](https://github.com/AndrewBelt). 
 
