@@ -27,6 +27,13 @@ module v_osdialog
 
 struct C.osdialog_filter_patterns{}
 struct C.osdialog_filters {}
+struct C.osdialog_color {}
+struct Color {
+	r int
+	g int
+	b int
+	a int
+}
 
 pub enum Actions {
 	open_file = C.OSDIALOG_OPEN 
@@ -67,6 +74,12 @@ fn C.osdialog_prompt(
 	text &char
 	) &char
 
+fn C.osdialog_color_picker(
+	color osdialog_color
+	opacity int
+	) int
+
+
 // opens file dialog 
 pub fn file(action Actions, path string, filename string, filters string) string {
 	
@@ -102,4 +115,9 @@ pub fn message(level Levels, buttons Buttons, message string) bool{
 pub fn prompt(level Levels, message string, text string) string {
 	response := C.osdialog_prompt(level, &char(message.str), &char(text.str))
 	return unsafe {response.vstring()} 
+}
+
+pub fn color_picker(color Color, opacity int) int{
+	return C.osdialog_color_picker(color, opacity)
+	
 }
